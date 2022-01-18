@@ -1,0 +1,330 @@
+<html lang="en">
+<head>
+<!-- code 60% :  codes 35% :  codea 95%  changed padding from 10 to 6 px -->
+<style>
+.code {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    background-color: lightblue;
+    margin: 10px 10px 10px 0px;
+    padding: 6px 6px 6px 0px;
+    width: 60%;
+    border-style: none;
+    border-color: blue;
+    border-radius: 10px;
+    white-space: pre;
+}
+.codes {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    background-color: lightblue;
+    margin: 10px 10px 10px 0px;
+    padding: 6px 6px 6px 0px;
+    width: 35%;
+    border-style: none;
+    border-color: blue;
+    border-radius: 10px;
+    white-space: pre;
+}
+.codea {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    background-color: lightblue;
+    margin: 10px 10px 10px 0px;
+    padding: 6px 6px 6px 0px;
+    width: 95%;
+    border-style: none;
+    border-color: blue;
+    border-radius: 10px;
+    white-space: pre;
+}
+</style>
+<title>Easy Glide into Linux</title>
+</head>
+<h4><font color=green> DRAFT FOR COMMENTS</font></h4>
+<center><h3><font color=red>Easy Glide into Linux</font></h3></center> 
+
+<audio controls> <source src="welcome1.mp3" type="audio/mpeg"></audio><p>
+
+You've gone through the 
+<a href="get-set-up.html">Get Set Up page</a>
+and now should have this web page
+and the window to the remote Linux computer both visible on your screen.
+A bit of overlap is ok, but you need to be able to read the
+instructions on this page and see the remote computer window as you type
+in commands and watch the results. Please don't cut and paste, this is
+<b>learning by doing</b> and you will get more out of actually doing!<p>
+
+This tutorial is divided into easy to handle chunks with alternating
+audio discussions and commands shown. After you've listened to an audio
+clip, type in the command into the window, as directed, and check to
+make sure it works. <b>If you don't execute the commands (shown in bold
+face) and think about the result you won't get the full benefit.</b>
+Then play the next audio or read the next text. Each section has an
+explanatory title.
+
+<hr>
+It's best to go through the sections below in order - but this could help
+to find sections when you return:<br>
+<a  href = "#ls">Listing Directory Contents</a> : 
+<a href="#creating">Creating and Editing Files</a> : <a
+href="#viewing">Viewing File Contents</a> : <a href="#copying">Copying,
+Moving and Removing Files</a> : <a href="#man">Man Pages</a> : <a
+href="#pwd">Directories</a> : <a href="#exiting">Exiting Linux</a> : <a
+href="#next">What's Next</a> : <a href="#learning">Learning More</a>
+<hr>
+<center><b><font color=red>Entering Commands</font></b></center><p>
+<table><tr><td>
+<audio controls><source src="prompt1.mp3" type="audio/mpeg">
+Your browser does not support the audio element, so this introduction
+won't play properly.</audio><p>
+
+<table><tr><td>
+<div class="codea">[hes@vm18-165 ~]$ _</div> 
+</td><td>
+&#8592; your typing will start at the cursor indicated by _
+</td></tr></table>
+Note: Your userid will be in the prompt, not mine, and the id of the
+remote computer you are using will be there instead of the ones I used
+for these examples. To the right is a picture of the command line in a
+command window.
+
+</td><td>
+<img src="remote-window.png" alt="showing login line as at left">
+</td></tr></table>
+
+<hr>
+<a name="ls">
+<center><b><font color=red>Listing Directory Contents</font></b></center><p>
+<table><tr><td>
+Note: in Linux UPPER and lower case are considered to be different, so
+use the case as shown in these examples. The keyboard key called Enter
+or Return will simply be referred to as the Enter key.<p>
+
+<audio controls><source src="ls1.mp3" type="audio/mpeg"></audio><p>
+
+<!-- https://www.w3schools.com/html/html5_audio.asp -->
+<div class="codes">[myid@vm18-165 ~]$ <b>ls</b></div>
+
+<audio controls> <source src="ls2.mp3" type="audio/mpeg"> </audio><p>
+
+<div class="codes">[myid@vm18-165 ~]$ <b>ls -l</b></div>
+
+<audio controls> <source src="ls3.mp3" type="audio/mpeg"> </audio><p>
+
+<div class="codes">[myid@vm18-165 ~]$ <b>ls c</b></div>
+
+We'll come back to directories in a while and permissions later, but for
+now we'll work on files and their contents. P.S. It's best to not have
+blanks in file names.
+</td>
+<td>
+Three different ways of using the ls command.<p><p><p><p><p><p><p>
+<a href = "ls-illus.html">If you're really having trouble.</a>
+</td>
+</tr></table>
+<hr>
+
+<a name="creating">
+<center><b><font color=red>Creating and Editing Files</font></b></center>
+<table border=1><tr>
+<td>
+Let's look at creating and editing text files.<p>
+<audio controls> <source src="nano1.mp3" type="audio/mpeg"> </audio><p>
+
+<div class="codea">[myid@vm18-165 ~]$ <b>nano nexample</b></div>
+
+<audio controls> <source src="nano2.mp3" type="audio/mpeg"> </audio><p>
+
+<div class="codea">[myid@vm18-165 ~]$ <b>ls</b>
+[myid@vm18-165 ~]$ <b>nano nexample</b></div>
+
+</td>
+<td>
+<pre>
+  GNU nano 2.3.1                File: nexample
+
+
+          [This is what the nano window looks like when
+           entering the nexample file, except that this 
+           doesn't show the black highlighting. The ^
+           indicates holding down the Ctrl key. To scroll
+           through a file longer than your nano window
+           use the up and down arrow keys.]
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Page ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where Is  ^V Next Page ^U UnCut Text^T To Spell
+</pre>
+<hr>
+For more on nano, a<a href="https://www.howtoforge.com/linux-nano-command/">
+tutorial</a>.
+</td>
+</tr></table>
+
+<hr>
+<a name="viewing">
+<center><b><font color=red>Viewing Text File Contents</font></b></center><p>
+<table><tr><td>
+<audio controls><source src="cat1.mp3" type="audio/mpeg"></audio><p>
+
+<div class="code">[myid@vm18-165 ~]$ <b>cat nexample</b>
+[myid@vm18-165 ~]$ <b>less nexample</b></div>
+ &nbsp; (For <b>less</b>: space bar &#8594; next page; b &#8594; previous page;
+and q &#8594; exit.)
+
+<div class="code">[myid@vm18-165 ~]$ <b>head nexample</b>
+[myid@vm18-165 ~]$ <b>tail nexample</b></div>
+
+<audio controls><source src="cat2.mp3" type="audio/mpeg"></audio><p>
+<div class="code">[myid@vm18-165 ~]$ <b>cat a</b></div>
+
+<audio controls> <source src="cat3.mp3" type="audio/mpeg"> </audio><p>
+<div class="code">[myid@vm18-165 ~]$ <b>cat nexample a</b></div>
+
+<audio controls> <source src="cat4.mp3" type="audio/mpeg"> </audio><p>
+<div class="code">[myid@vm18-165 ~]$ <b>cat nexample a > merged-file</b></div>
+
+And then use cat to see what's in the file merged-file. It will show
+the contents of nexample followed by the contents of a.<p>
+
+Using &gt;&gt; instead of &gt; will add the output to the the end of an 
+existing file given after the &gt;&gt;, instead of putting the output 
+in a new file. (Be careful, if you put an existing file's name after &gt;, 
+the file will be replaced.)
+</td>
+<td>
+<a href = "viewing-illus.html">If you're really having trouble.</a>
+</td></tr></table>
+<hr>
+<a name="copying">
+<center><b><font color=red>Copying, Moving and Removing Files</font></b></center><p>
+<a name="cp-rm">
+
+<audio controls><source src="cp1.mp3" type="audio/mpeg"></audio><p>
+<div class="codes">[myid@vm18-165 ~]$ <b>cp a a-new</b>
+[myid@vm18-165 ~]$ <b>ls -l</b></div>
+
+<audio controls><source src="rm1.mp3" type="audio/mpeg"></audio><p>
+<div class="codes">[myid@vm18-165 ~]$ <b>rm a-new</b>
+[myid@vm18-165 ~]$ <b>ls -l</b></div>
+
+<audio controls><source src="mv1.mp3" type="audio/mpeg"></audio><p>
+<div class="codes">
+[myid@vm18-165 ~]$ <b>cp a a-new</b>
+[myid@vm18-165 ~]$ <b>ls</b>
+[myid@vm18-165 ~]$ <b>mv a-new xyz</b>
+[myid@vm18-165 ~]$ <b>ls</b>
+[myid@vm18-165 ~]$ <b>mv xyz c/xyz</b>
+[myid@vm18-165 ~]$ <b>ls</b>
+[myid@vm18-165 ~]$ <b>ls c</b>
+</div>
+
+<audio controls><source src="scp1.mp3" type="audio/mpeg"></audio><p>
+<font color="red">What's Next</font>, near the bottom of this page, 
+discusses local/remote file transfer.<p>
+
+A small time-saving tip: The up arrow key on the keyboard will scroll up to
+show past commands which can be executed or modified and then executed.
+The down arrow key will scroll down.
+<hr>
+<a name="man">
+<center><b><font color=red>Linux Manual Pages</font></b></center><p>
+<audio controls><source src="man1.mp3" type="audio/mpeg"></audio><p>
+ &nbsp; &nbsp; Use the space bar to go to the next page, and the q key
+to exit a man listing<br>
+
+<div class="codes">[myid@vm18-165 ~]$ <b>man man</b>
+[myid@vm18-165 ~]$ <b>man ls</b></div>
+<hr>
+<a name=pwd>
+<center><b><font color=red>Directories</font></b></center><p>
+<table><row><td>
+<audio controls><source src="pwd1.mp3" type="audio/mpeg"></audio><p>
+<div class="codea">[myid@vm18-165 ~]$ <b>pwd</b></div>
+<audio controls><source src="cd1.mp3" type="audio/mpeg"></audio><p>
+<div class="codea">[myid@vm18-165 ~]$ <b>cd /home</b>
+[myid@vm18-165 home]$ <b>pwd</b>
+[myid@vm18-165 home]$ <b>ls</b></div>
+<audio controls><source src="cd2.mp3" type="audio/mpeg"></audio><p>
+<div class="codea">[myid@vm18-165 home]$ <b>cd</b></div>
+<audio controls><source src="cd3.mp3" type="audio/mpeg"></audio><p>
+<div class="codea">[myid@vm18-165 ~]$ <b>cd ..</b>
+[myid@vm18-165 home]$ <b>cd</b></div>
+<audio controls><source src="mkdir1.mp3" type="audio/mpeg"></audio><p>
+<div class="codea">[myid@vm18-165 ~]$ <b>mkdir mynewdir</b>
+[myid@vm18-165 ~]$ <b>ls</b></div>
+<audio controls><source src="rmdir1.mp3" type="audio/mpeg"></audio><p>
+<div class="codea">[myid@vm18-165 ~]$ <b>rmdir mynewdir</b>
+[myid@vm18-165 ~]$ <b>ls</b></div>
+</td>
+<td> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+<a href="directories-illus.html">For a more visual display of the tree
+structure.</a>
+</td></tr></table>
+
+<hr>
+
+<a name="exiting">
+<center><b><font color=red>Leaving a Linux Session</font></b></center><p>
+
+<audio controls> <source src="ex1.mp3" type="audio/mpeg"> </audio><p>
+
+<div class="codes">[myid@vm18-165 ~]$ <b>exit</b>
+[myid@vm18-165 ~]$ <b>logout</b></div>
+
+<hr>
+<a name="next">
+<center><b><font color=red>What's Next</font></b></center><p>
+<audio controls> <source src="next1.mp3" type="audio/mpeg"> </audio><p>
+
+<a href="file-transfer.html">Transferring Files between local and remote
+computers</a> This will be needed for serious projects, and so will<br>
+ <a href="perm.html">File Permissions</a> when you are running your own
+programs or working with others.<p>
+
+<a href="add.html">Some more useful commands and Linux
+functionality</a><p>
+
+<hr>
+<a name="learning">
+<center><b><font color="red">Learning more</font></b></center>
+
+This Easy Glide was meant to be a short easy way to get started. The man
+pages can be helpful at times, but are very condensed and aimed at
+people who know most or all of the material and just need to jog their
+memory or add a detail.<p>
+
+Next, using a good quality online Linux tutorial would be a good idea.
+They generally are aimed at readers who have gone through the
+basics and want to learn more. For example, one which <a
+href="https://projects.ncsu.edu/hpc/Documents/unixtut/">is aimed at NC
+State HPC users</a>, another which is <a href
+="http://ncsu.orgsync.com/org/e115/Course_Info"> for NC State people as
+it assumes one is using the AFS file system</a> (see the Chapters on
+Basic and Advanced UNIX COMMANDS), and then one <a
+href="https://ryanstutorials.net/linuxtutorial/">for the
+general Linux environment</a>. 
+<a href="http://swcarpentry.github.io/shell-novice/"> Another one</a> only
+uses a local computer and explains how to install the necessary software
+into a Windows computer (the Mac already has what's needed.) If you go
+this route, and/or can't use the VCL, this <a href="glide-image.html">
+details how to set up the Glide environment.</a><p>
+
+Scripting can be extremely useful when one gets into production work.
+Typing in a sequence of many commands, often with many options, is
+tedious and error prone. But a full treatment of this is beyond the
+scope of our Easy Glide. Luckily there are a number of extended
+tutorials, for <a
+href="https://research.csc.fi/csc-guide-linux-bash-scripts">example.</a>
+
+<hr>
+Copyright 2019 by Henry E. Schaffer.
+Comments and suggestions are welcome, and should go to
+hes&#64;ncsu.edu<br>
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 
+International Public License  
+https://creativecommons.org/licenses/by-nc/4.0/legalcode<br>
+Last updated 9/13/2019. 
+</body>
+</html>

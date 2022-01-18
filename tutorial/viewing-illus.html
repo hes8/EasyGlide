@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Illustrating the use of the  cat  command</title>
+<style>
+.codes {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    background-color: lightblue;
+    margin: 10px 10px 10px 0px;
+    padding: 6px 6px 6px 0px;
+    width: 30%;
+    border-style: none;
+    border-color: blue;
+    border-radius: 10px;
+    white-space: pre;
+}
+</style>
+</head>
+<body>
+An illustration of the results of entering 
+
+<div class="codes">[hes@vm18-165 ~]$ <b>cat a</b></div>
+
+where the file a was set up to have 3 lines in it, each with 3 copies of
+"lots of characters".
+
+<pre>
+[hes@vm18-165 ~]$ cat a
+lots of characters lots of characters lots of characters
+lots of characters lots of characters lots of characters
+lots of characters lots of characters lots of characters
+[hes@vm18-165 ~]$ 
+</pre>
+If that works, but<br>
+<div class="codes">[myid@vm18-165 ~]$ <b>cat nexample</b></div>
+doesn't print anything - and it should print
+what you had entered into the file nexample, then do<br>
+<div class="codes">[myid@vm18-165 ~]$ <b>ls -l nexample</b></div>
+and make sure it exists, and, if it does, that its size is not 0. If it
+doesn't show up as a result of ls, or if its size is 0, then you won't
+have anything printed. If that's so, then go back and use nano to write
+out the nexample file as shown above.
+
+<p>
+<a href="index.html#viewing">Return to Glide</a>
+<hr>
+Copyright 2019 by Henry E. Schaffer.
+Comments and suggestions are welcome, and should go to
+hes&#64;ncsu.edu<br>
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 
+International Public License  
+https://creativecommons.org/licenses/by-nc/4.0/legalcode<br>
+Last updated 8/30/2019
+</body>
+<html>

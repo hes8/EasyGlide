@@ -1,0 +1,148 @@
+<html>
+<head><title>File Transfer</title>
+<style>
+.codea {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    background-color: lightblue;
+    margin: 10px 10px 10px 0px;
+    padding: 6px 6px 6px 0px;
+    width: 95%;
+    border-style: none;
+    border-color: blue;
+    border-radius: 10px;
+    white-space: pre;
+}
+.codes {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    background-color: lightblue;
+    margin: 10px 10px 10px 0px;
+    padding: 6px 6px 6px 0px;
+    width: 60%;
+    border-style: none;
+    border-color: blue;
+    border-radius: 10px;
+    white-space: pre;
+}
+</style>
+</head>
+<body>
+<center><h3><font color=red>File Transfer Between Local and Remote Computers
+</font></h3></center>
+
+<audio controls> <source src="transfer1.mp3" type="audio/mpeg"> </audio>
+<a href="transcript.html#transfer1">Transcript</a><p>
+
+Note that the commands shown below are typed in with no Enter in the
+middle even if shown continuing on a second line because the browser
+window isn't wide enough.<p>
+
+<table><tr><td>
+<center><b><font color=red>Mac</font></b></center><p>
+File transfer can use the scp command in a Terminal Window on your Mac. This
+software comes with OS X.<p>
+
+You need to have a second terminal window open, in addition to the
+terminal window accessing the remote VCL Linux system, as was the case in 
+the previous exercises. This one is running on your Mac. (It's started
+from Applications/Utilities.)<p>
+
+You can transfer a file in either direction using the scp command, using
+your local Terminal window, giving
+the "from" file first and the "to" second. So to transfer a file to the
+remote computer from your local home directory (indicated by the ~
+symbol)<p>
+<div class="codea">H:~ Henry$ <b>scp file-name myid@152.46.18.165:.
+</b></div>
+where 152.46.18.165 is the IP address of your Glide image reservation
+and "file-name" is the name of your file on your local computer to be
+copied to the remote computer. The "." after the ":" says
+to keep the file-name the same. You will then receive a password
+request from the remote computer - use the same password you used to
+login. Use your window to the remote computer to see that the file was
+received.<p>
+
+Similarly the command<p>
+<div class="codea">H:~ Henry$ <b>scp  myid@152.46.18.165:file-name .
+</b></div>
+transfers the remote file back into your local directory. Don't forget
+the space after the file name, and then the following "." says it goes
+into the directory in which you are working with the same name. As
+before, you will get a password request.<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+</td>
+<td>
+<center><b><font color=green>Windows</font></b></center>
+WinSCP is a free software package for transferring files. Check if it
+has already been installed on your local machine. If it hasn't,
+it needs to be <a href="https://winscp.net/eng/download.php"> downloaded 
+to your local machine</a> - so you likely will need to have administrator 
+privilege.<p>
+
+To use WinSCP when you are have the Glide command window open via PuTTY, 
+you need to start WinSCP. Use the File Protocol drop down menu to choose
+SCP, and then login. You'll then have a window showing both your local
+and remote directories. You can change directories by clicking on the
+line showing the current directory or double clicking the (sub)directory
+shown.<p> 
+Then you just click and drag files from one computer to the other.
+<b>But there is a small problem.</b> Windows and Linux use a slightly
+different way to designate ending a line and starting a new line in a
+text file ("text" includes numerical data). So if you move a data file
+from Windows to the remote Linux computer, you'll need to convert the
+file in the remote computer to use the Linux standard. That's very easy
+using the dos2unix command.<sup>*</sup><p>
+<div class="codea">[hes@vm18-165 ~]$ <b>dos2unix file-name</b></div>
+dos2unix: converting file file-name to Unix format ...<p>
+
+Now you're ready to use the data file on the remote Linux computer.<p>
+
+To move text files from the remote Linux computer back to your local
+Windows computer.<br>
+First - convert to Windows<sup>*</sup> line endings via <p>
+
+<div class="codea">[hes@vm18-165 ~]$ <b>unix2dos file-name</b></div>
+unix2dos: converting file file-name to DOS format ...<p>
+
+and then use WinSCP as above to click/drag the file to your Local
+computer.<p>
+
+<sup>*</sup>If you're curious about the use of "unix" vs "Linux" -
+"unix" was the predecessor of Linux, and the name of this command
+wasn't changed. Also the original Microsoft Operating System was called
+"DOS" not Windows.
+
+</td></tr></table><p>
+
+<div class="codea">[hes@vm18-165 ~]$ <b>sftp myid@152.46.18.165</b></div>
+
+The sftp command is similar to scp, but is more efficient when more than
+one or two file transfers are to be done. It is included in the MacOS
+and in WinSCP - but read about the file format in the Windows section
+above. When transfering several/many files, perhaps using multiple
+directories - it certainly can be done with scp, but with a lot of
+typing and multiples authentications. The sftp command only takes one
+authentication (when you login to do the transfers), allows changing
+directories and more. This <a
+href="https://projects.ncsu.edu/hpc/Documents/CopyFiles.php">good short
+writeup</a> covers the basics. Note: use your server IP address and
+directories, not those given in the example. Also other software can
+provide sftp capabilities, e.g. FileZilla.<p>
+
+For <a href="https://projects.ncsu.edu/hpc/Documents/CopyFiles.php">a
+lot more about transfering files</a> including larger scale techniques
+(see Globus on that page for really large amounts of data.) But for most
+learning by trying, probably including class assignments, the scp
+transfer method described above should be adequate.
+<hr>
+<a href="index.html#next">Return to Glide main page</a>
+<hr>
+Copyright 2019, 2020, 2021 by Henry E. Schaffer.
+Comments and suggestions are welcome, and should go to
+hes&#64;ncsu.edu<br>
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 
+International Public License  
+https://creativecommons.org/licenses/by-nc/4.0/legalcode<br>
+Last updated 2/22/2021
+</body><html>

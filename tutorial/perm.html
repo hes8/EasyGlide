@@ -1,0 +1,117 @@
+<html>
+<head>
+<style>
+.code {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    background-color: lightblue;
+    margin: 10px 10px 10px 0px;
+    padding: 6px 6px 6px 0px;
+    width: 80%;
+    border-style: none;
+    border-color: blue;
+    border-radius: 10px;
+    white-space: pre;
+}
+</style>
+<title>Linux Permissions </title>
+</head>
+<body>
+
+<center><h3><font color=red>Linux Permissions - Understanding and Using
+Them</font></h3></center> 
+
+<audio controls> <source src="perm1.mp3" type="audio/mpeg"></audio>
+<a href="transcript.html#perm1">Transcript</a>
+
+<div class="code">[hes@vm18-165 ~]$ <b>ls -l</b></div><p>
+
+<audio controls> <source src="perm2.mp3" type="audio/mpeg"></audio>
+<a href="transcript.html#perm2">Transcript</a><p>
+
+Following the first character, which indicates file or directory, there
+are 3 groups of 3 permissions each, from left to right: User (that's
+you), Group, and World (i.e. anyone logged into the computer.) Each has
+the three rwx permissions (or lack of permission) - so 9 permissions in
+total. The shortcut in entering permissions is to use numerical values
+representing the three permissions. For this r = 4, w =2, and x=1  so
+rwx = 7, r-- = 4 and so forth. (That's octal notation.) Now for your
+file permissions.<p>
+
+File read, write, and e<b>x</b>ecute (run) permissions are
+indicated by the letters rwx. Lack of permission is indicated by a "-"
+in place of the letter giving permission.<br>
+<ul>
+<li> read (r) is permission to see what's in the file - e.g. via cat
+
+<li>  write (w) - is permission edit the file
+
+<li> x  is permission to run a file as a program/script<br>
+     so any program/script file you want to run needs to have this permission
+</ul>
+
+
+<center><font color="red">Execute Permission for a File</font></center>
+
+<audio controls> <source src="perm3.mp3" type="audio/mpeg"></audio>
+<a href="transcript.html#perm3">Transcript</a>
+  &nbsp; Use the file name test.pl<p>
+
+<pre><b>#!/usr/bin/perl
+print "Hello, World!\n";</b></pre>
+
+Now try to execute the file. (Starting with "./" is necessary, - it means
+you are executing a program which is in your own directory.)
+
+<div class="code">[hes@vm18-165 ~]$ <b>./test.pl</b></div><p>
+
+This result<br>
+
+<pre>./test.pl: Permission denied.</pre>
+
+is because <b>your</b> file hasn't been given execute permission.<p>
+
+The chmod command is used to assign and change permissions. To see the
+current permissions for your test.pl command:
+
+<div class="code">[hes@vm18-165 ~]$ <b>ls -l test.pl</b></div><p>
+
+will show the permissions as<br>
+<pre>-rw-r--r--</pre>
+
+So your permissions for this file are <pre>rw-</pre> The "x" is missing.
+Use chmod to change that
+
+<div class="code">[hes@vm18-165 ~]$ <b>chmod 744 test.pl</b></div><p>
+
+Then check on the change
+<div class="code">[hes@vm18-165 ~]$ <b>ls -l test.pl</b></div><p>
+ 
+Note that the 7 in 744 changed rw- to rwx and the 44 left r--r--
+unchanged.<p>
+
+Verify the new permissions via
+
+<div class="code">[hes@vm18-165 ~]$ <b>ls -l test.pl</b></div><p>
+
+And see what the rwx does by trying again to execute
+
+<div class="code">[hes@vm18-165 ~]$ <b>./test.pl</b></div><p>
+
+If everything was done correctly, the result should be the standard
+greeting used by first time programs - Hello, World!<p>
+
+<audio controls> <source src="perm4.mp3" type="audio/mpeg"></audio>
+<a href="transcript.html#perm4">Transcript</a><p>
+
+<a href="index.html#next">Return to Glide</a>
+<hr>
+Copyright 2019, 2020 by Henry E. Schaffer.
+Comments and suggestions are welcome, and should go to
+hes&#64;ncsu.edu<br>
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 
+International Public License  
+https://creativecommons.org/licenses/by-nc/4.0/legalcode<br>
+Last updated 6/15/2020
+</body>
+<html>

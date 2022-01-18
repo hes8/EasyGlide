@@ -1,0 +1,119 @@
+<html>
+<head><title>Additional Commands and Functionality</title> <style>
+.codes {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    background-color: lightblue;
+    margin: 10px 10px 10px 0px;
+    padding: 6px 6px 6px 0px;
+    width: 100%;
+    border-style: none;
+    border-color: blue;
+    border-radius: 10px;
+    white-space: pre;
+}
+</style>
+</head>
+<body>
+<center><h3><font color=red>Additional Commands and Functionality</font></h3>
+</center>
+<audio controls> <source src="add1.mp3" type="audio/mpeg"></audio>
+<a href="transcript.html#add1">Transcript</a>
+<hr>
+<center><font color=red>Wildcards</font></center><p>
+
+"Wildcards" in file and/or directory names allow display of selected
+file or directory names rather than listing all of them.  * and ? are
+the most commonly used ones. "*" represents 0 or more characters so <p>
+
+<div class="codes">[hes@vm18-165 ~]$ <b>ls first*</b></div>
+will display the names of all files and directories starting with the
+letters "first" with 0 or more characters following in the name.<p>
+
+"?" represents exactly one character. So<p>
+<div class="codes">[hes@vm18-165 ~]$ ls <b>first-c?t</b></div>
+would display the file first-cat but not the file first-file. It would
+also display first-cot, if there was such a file.
+
+<hr>
+<center><font color=red>Searching for Patterns</font></center>
+<audio controls> <source src="add2.mp3" type="audio/mpeg"></audio>
+<a href="transcript.html#add2">Transcript</a><p>
+
+The grep command format is<p>
+
+<b>grep pattern file(s)</b><p>
+
+The pattern is a regular expression. The simplest one is just a
+character string, and grep looks for a match in the file(s). It doesn't
+have to be a complete word, just a string of characters. grep prints
+the lines of file(s) matching a pattern (a regex).
+
+<div class="codes">[hes@vm18-165 ~]$ <b>grep line first-file</b></div>
+
+A regular expression example using a wildcard is sec.ond where the "." means
+that any one character is considered a match for that position. The "*"
+is commonly used to search many files, e.g. *html will include all the
+html files in the directory.
+(The notation differs between wildcards and regexes.)<p>
+ 
+<div class="codes">[hes@vm16-203 ~]$ <b>grep se.ond first-file</b></div>
+
+will look for 6 characters appearing anywhere in the file, where the
+first 2 are specified as are the last 3, but the 3rd can be any
+character. E.g. "se9ond" or "se+ond" appearing in the file would also
+match.<p>
+
+Regexes can be, and usually are, much more complicated than just using
+wildcards. Learning to formulate all the types of regular expressions is
+a more advanced topic, which can be very useful, and whole books have
+been written on this topic. E.g. Mastering Regular Expressions by
+Jeffrey Friedl.
+
+A <a href="https://www.regular-expressions.info/">
+much shorter treatment</a> and
+<a href="https://en.wikipedia.org/wiki/Regular_expression">more.</a>
+
+<hr>
+
+<center><font color=red>Piping Command Output to a Command Input </font></center>
+<audio controls> <source src="add3.mp3" type="audio/mpeg"></audio>
+<a href="transcript.html#add3">Transcript</a><p>
+The symbol for pipe is | <br>
+
+A very simple task illustrating its use is to search two files for a
+pattern. (It doesn't have to be in both files, and when it isn't,
+nothing is output.) We could search them individually and "print" the
+output of each command on the screen:<p>
+
+<div class="codes">[hes@vm18-165 ~]$ <b>grep se.ond first-cat</b>
+[hes@vm18-165 ~]$ <b>grep se.ond first-file</b></div>
+
+or put them together and do one search:
+
+<div class="codes">[hes@vm18-165 ~]$ cat <b>first-cat first-file > tmp-file</b>
+[hes@vm18-165 ~]$ <b>grep se.ond tmp-file</b>
+[hes@vm18-165 ~]$ <b>rm tmp-file</b></div>
+
+where the last command removes the no longer needed temporary file,
+and both approaches work, but using the | command makes it more straight
+forward.<p>
+
+<div class="codes">[hes@vm18-165 ~]$ <b>cat first-cat first-file | grep se.ond
+</b></div>
+
+will more directly arrive at the needed result. This is a very simple
+example of using the pipe command to redirect the output of one command
+directly into the input of another command.
+<hr>
+
+<a href="index.html#next">Return to Glide main page</a>
+<hr>
+Copyright 2019, 2020 by Henry E. Schaffer.
+Comments and suggestions are welcome, and should go to
+hes&#64;ncsu.edu<br>
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 
+International Public License  
+https://creativecommons.org/licenses/by-nc/4.0/legalcode<br>
+Last updated 1/9/2020
+</body><html>

@@ -1,0 +1,122 @@
+<html>
+<head>
+<style>
+.codes {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    background-color: lightblue;
+    margin: 10px 10px 10px 0px;
+    padding: 6px 6px 6px 0px;
+    width: 30%;
+    border-style: none;
+    border-color: blue;
+    border-radius: 10px;
+    white-space: pre;
+}
+</style>
+<title>Setting up a Glide image/system</title>
+</head>
+
+<body>
+<center><h3><font color=red>Setting up a Glide image/system </font></h3>
+</center>
+
+Why would you do this when it's available in the VCL?
+<ul>
+<li> Because you don't have access to the VCL.
+<li> Because something is wrong and you can't get the Glide image in the
+VCL
+</ul>
+
+So this is how to set it up anywhere, and then it can be used with the
+Easy Glide into Linux tutorial. However, depending on how/where it's set
+up, some of the instructions in the "Get Set Up" page may not be
+appropriate.<p>
+
+If you are the learner, you need to get help from a Linux user to get
+this set up.<p>
+
+The setup described here should work with all Linux distros. (The VCL
+Glide image uses CentOS Release 7.9) But not all Linux systems have the
+<b>tree command</b> installed, so add it via yum or apt, as appropiate, 
+if it's not there. Everything else should be there. (We have found that
+the tree command is very helpful for students to grasp the
+tree-structure of computer directories.)<p>
+
+The directory tree for the /home directory is
+<pre>
+/home
+|-- hes
+|   |-- a
+|   |-- b
+|   |-- c
+|   |   |-- w
+|   |   |-- y
+|   |       |-- z
+|   |-- first-cat
+|   |-- first-file
+|-- mtr
+    |-- onlyonefile
+
+4 directories, 7 files
+</pre><p>
+
+So the user's home directory (here it's hes) and also the subdirectories
+c and y need to be set up. Also the /home/mtr directory.<p>
+
+Then fill in the files - whose contents are:<br>
+
+<pre>
+$ cat a
+lots of characters lots of characters lots of characters
+lots of characters lots of characters lots of characters
+lots of characters lots of characters lots of characters
+
+$ cat b
+This file doesn't have anything in it about bees.
+
+$ cat w
+123.45,546.7
+32.1,458.904
+
+$ cat z
+This file is down in your directory tree. It's in a subdirectory of a
+subdirectory of your own directory in /home
+
+$ cat first-cat 
+Muezza
+
+$ cat first-file 
+Is this the first file, or the second, or ...? Does anyone care?
+Here's the second line of this file.
+And the third.
+
+$ cat onlyonefile 
+which contains nothing
+at all of interest
+</pre>
+<b>Note:</b> If you are using this page to set up a Linux system for use with
+Glide, use the back arrow on the browser to get back to the start of the
+Set Up page. The rest of this page is for illustrating working with
+directories, and the Return link at the bottom will take you to the
+Directory section of Glide.<p>
+
+<audio controls> <source src="dir-tree2.mp3" type="audio/mpeg"> </audio>
+<a href="transcript.html#dir-tree2">Transcript</a> 
+
+<div class="codes">[hes@vm18-165 ~]$ <b>tree /home</b></div><p>
+
+This should show you the 4 directories and 7 files as at the top of this
+web page.<p>
+
+<a href="index.html#pwd">Return to Glide</a>
+<hr>
+Copyright 2019, 2020, 2022 by Henry E. Schaffer.
+Comments and suggestions are welcome, and should go to
+hes&#64;ncsu.edu<br>
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 
+International Public License  
+https://creativecommons.org/licenses/by-nc/4.0/legalcode<br>
+Last altered 1/11/2022.
+</body>
+<html>

@@ -1,0 +1,81 @@
+<html>
+<head>
+<style>
+.codes {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    background-color: lightblue;
+    margin: 10px 10px 10px 0px;
+    padding: 6px 6px 6px 0px;
+    width: 65%;
+    border-style: none;
+    border-color: blue;
+    border-radius: 10px;
+    white-space: pre;
+}
+</style>
+<title>Viewing directories using the tree command</title>
+</head>
+<body>
+
+<center><h3><font color=red> Viewing directories using the tree command
+</font></h3></center>
+
+Not all Linux systems have the tree command installed, but it is in the
+Linux system/image set up for this introduction.<p>
+<audio controls> <source src="dir-tree1.mp3" type="audio/mpeg"> </audio>
+<a href="transcript.html#dir-tree1">Transcript</a><p>
+<div class="codes">[hes@vm18-165 ~]$ <b>tree</b></div><p>
+
+You should see the directory tree displayed as follows:
+<pre>
+[hes@vm18-165 ~]$ tree
+.
+|-- a
+|-- b
+|-- c
+|   |-- w
+|   |-- y
+|       |-- z
+|-- first-cat
+|-- first-file
+
+2 directories, 6 files
+</pre><p>
+
+<audio controls> <source src="dir-tree2.mp3" type="audio/mpeg"> </audio>
+<a href="transcript.html#dir-tree2">Transcript</a>
+
+<div class="codes">[hes@vm18-165 ~]$ <b>tree /home</b></div><p>
+You should see the directory tree starting with /home displayed as follows:
+<pre>
+[hes@vm18-165 ~]$ tree /home
+/home
+|-- hes
+|   |-- a
+|   |-- b
+|   |-- c
+|   |   |-- w
+|   |   |-- y
+|   |       |-- z
+|   |-- first-cat
+|   |-- first-file
+|-- mtr
+    |-- onlyonefile
+
+4 directories, 7 files
+</pre>
+
+If there are other directories in /home besides yours, they are owned by
+other users, so mtr is another user.<p>
+<a href="index.html#pwd">Return to Glide</a>
+<hr>
+Copyright 2019,2020 by Henry E. Schaffer.
+Comments and suggestions are welcome, and should go to
+hes&#64;ncsu.edu<br>
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 
+International Public License  
+https://creativecommons.org/licenses/by-nc/4.0/legalcode<br>
+Last updated 1/9/2020
+</body>
+<html>

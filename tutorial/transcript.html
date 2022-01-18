@@ -1,0 +1,531 @@
+<html lang="en">
+<head>
+<title>Transcript of Audio for Easy Glide</title>
+</head>
+<body>
+<a name="set-up"></a>
+Welcome to the Easy Glide into Linux. This is learning by doing. You
+can't just sit there and read the material. You need to be active,
+listen to the audio clip and then type in commands after finding out
+what they do and then look at the results and consider the information
+provided.<p>
+
+You've gone through the Get Set Up page and now should have this web
+page and the window to the remote Linux computer both visible on your
+screen. A bit of overlap is ok, but you need to be able to read the
+instructions on this page and see the remote computer window as you type
+in commands and watch the results. Please don't cut and paste, this is
+learning by doing and you will get more out of actually doing!<p>
+
+This introduction is divided into easy to handle chunks with alternating
+audio discussions and command(s) shown. After you've listened to an
+audio clip, type in the command into the window, as directed, and check
+to make sure it works. If you don't execute the commands and think about
+the result you won't get the full benefit. Then play the next audio or
+read the next text. Each section has a title and is bounded by
+horizontal lines.<p>
+<a href="index.html#welcome">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="entering"></a>
+We'll be entering Linux commands, they are entered after the prompt.
+Different varieties of Linux have somewhat different prompts. Usually
+they have an indication of the directory you are in, we'll cover
+directories later, and then end with a $ or a &gt; followed by a space
+after which you enter a command. So the commands shown below are shown
+coming after the prompt, and you have to press the Enter key after each
+command to tell the computer to execute the command.<p>
+<a href="index.html#entering">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="ls1"></a>
+We'll start with the ls command which is short for list. Linux commands
+are usually short because they have to be typed in. They are followed by
+pressing the Enter key to tell the computer to execute them. So type in
+and execute the command shown below.<p>
+<a href="index.html#ls">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="ls2"></a>
+What did you get? It should be a listing of what's in your directory,
+your home directory. See that twiddle before the right bracket and the
+dollar sign? It represents your home directory. Actually the real name
+is tilde. When you're in a different directory, that directory name will
+be in place of the twiddle. We'll discuss directories later. Now, to add
+an option or argument to the command, type in the command below with the
+option minus l. This stands for "long".<p>
+<a href="index.html#ls">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="ls3"></a>
+The output is the long format which shows permissions, ownership, file
+size, date and file name. You should see a file named first-cat which has a size
+of 7 bytes, which includes the content plus line endings. Look at the
+third line in the listing, something named c and there is a d at the far
+left of its line. That means c is the name of a directory, a
+subdirectory of our home directory. The name c may be in a different
+color to point out that it's not a file. Next, we can see what is in the
+c directory by using its name after the ls command. So go ahead and
+enter and execute the command immediately below.<p>
+
+<a href="index.html#ls">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="nano1"></a>
+Now that you've seen the files and directories which are already in your
+home directory, it's time to create a new file. We'll use  nano  which
+is one of many text editors. It is easy to start using it. Others are
+more powerful, such as vim and emacs, but not as easy to start with.
+After starting nano, the commands are at the bottom, and the caret means
+to hold the Ctrl key while hitting the specified key. (It does not mean to 
+use the caret character.) For example, Ctrl-X  will exit nano. If you know
+another Linux text editor, feel free to use it, otherwise just use nano
+in the exercises.<p>
+
+There are two ways to make a new file. Either write the new file name
+after the nano command and then press Enter. Or just start nano, and
+then use Ctrl-O to write it out with the name you want.<p>
+
+So now create a new file in your home directory, call it   nexample  .
+Type in at least 15 lines, they can be short lines, but they should be
+different, then save it and exit. Start with the command shown below.<p>
+<a href="index.html#creating">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="nano2"></a>
+List the files in your directory with the ls command and you'll see the
+new file. What's in it? You can see its contents and also edit it by
+opening it with the command shown below. So go ahead and open it, see
+that it's what you wrote before and then edit it by adding one more line
+and then save it by writing it out and then exit.<p>
+<a href="index.html#creating">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="cat1"></a>
+There are easier ways to just see the contents of a file and next we'll
+look at a group of them. They are shown in the 4 lines immediately
+below. Go ahead and execute all of them, and look at what each prints,
+i.e. displays on the screen.<p>
+<a href="index.html#viewing">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="cat2"></a>
+cat simply prints on the screen the full contents of the file named
+nexample. Less prints the full contents, but only a screen at a time.
+head prints the top of the file, and tail prints the bottom of the file.
+This should explain what you saw on your screen.<p>
+
+However, cat has another very important use. It can join files. There's
+a short file in your directory called a. You can see its contents by
+using any of the display commands shown above. For example, execute the
+command immediately below.<p>
+<a href="index.html#viewing">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="cat3"></a>
+Next cat is used to join two files. Execute the command immediately
+below.<p>
+<a href="index.html#viewing">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="cat4"></a>
+That showed the results of joining the two files - and it can join more
+than two by adding the file names to the command line. This can be
+useful, and what's even more useful is being able to redirect the
+results into a new file instead of it appearing on the screen. That is
+shown in the command immediately below which you should execute.<p>
+<a href="index.html#viewing">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="cp1"></a>
+Another part of managing files has to do with copying them such as when
+you want to make changes and also want to retain the original. To copy a
+file we use the cp copy command, following it with the name of the file
+to be copied and then the file name for the new copy. Try this using the
+command immediately below, and then follow up with the next command to
+see it is there and of the same size as the original file.<p>
+<a href="index.html#copying">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="rm1"></a>
+Removing files which are no longer wanted is another part of file
+management. Remove the new copy you just made, using the command
+immediately below and then follow up with the next command to see it's
+gone.<p>
+<a href="index.html#copying">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="mv1"></a>
+The move command   mv   is similar to the copy command, but instead of
+creating a new file, it moves it to a new name which simply changes its
+name, or it moves it to a new directory. The commands immediately below
+will make a new file as you did above, move it to a new name, and then
+move it to a new directory and let you see the results.<p>
+<a href="index.html#copying">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="scp1"></a>
+The above commands are used in the remote computer. But when one wants
+to copy files to/from local/remote computers, other software must be
+used. For a local Mac, the software (scp or sftp) comes with the
+Operating System. For a local Windows computer, open source software,
+such as WinSCP and Filezilla, can be used. Because this involves
+installation of software, no exercises are included here, but there is a
+separate web page with instructions. While the interfaces are different,
+the functionality is essentially that of the cp command.<p>
+<a href="index.html#copying">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="man1"></a>
+There are many options for most commands, too many to remember them all.
+To refresh your memory there are Manuals at your finger tips which can
+be viewed by using the man command. Each manual, referred to as a "man
+page" gives a very terse summary of the purpose of the command, its
+format and options and that's very useful. But there isn't much
+explanation. For that the online tutorials do a better job. To see the
+man page for the man command, execute the command immediately below. To
+exit from a man page use the q key. Then execute the next command to see
+the man page for a command you already know and see what the -l and -t
+options do.<p>
+<a href="index.html#man">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="pwd1"></a>
+Earlier we said we'd come back to this topic, and the basic question is
+"What directory am I working in?" The pwd command says to <b>p</b>rint the
+<b>w</b>orking <b>d</b>irectory, the one in which you are working - 
+and not just the
+working directory name, but the full path starting from the root
+directory. The root directory is symbolized by a forward slash / and is
+the top level directory in your file system. When you execute the pwd
+command, it will show the path from the root directory, followed by its
+sub-directory named home and then to its sub-directory which has your
+userid as its name. Now execute the command immediately below.<p>
+<a href="index.html#pwd">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="cd1"></a>
+To see what's in the /home directory, one way is to move into that
+directory using the cd change directory command. Now execute the command
+immediately below, and then the command below it.<p>
+<a href="index.html#pwd">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="cd2"></a>
+Since you're in a different directory, you can see that the twiddle in
+the prompt has changed to home and ls shows all the users with
+directories in the /home directory - including you.<p>
+
+It would be good to get back to your own directory. There are a couple
+of ways to do that. First one can explicitly write the full path name of
+your directory after the cd command. But that takes some typing and the
+cd command has a shortcut - just type the command with no file name
+after it and it returns you to your own directory. Try than now.<p>
+<a href="index.html#pwd">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="cd3"></a>
+Another shortcut is that two periods in a row following a command refer
+to the directory above the one you are in. Notice that there always is a
+space after a command before anything else is typed in. So execute the
+command below, and see where you go to, and then return to your own
+directory using what you have learned above.<p>
+<a href="index.html#pwd">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="mkdir1"></a>
+While the commands above let you move around in directories, it would be
+nice to make new directories and remove directories. The mkdir command
+makes a new subdirectory in the directory you're in. Then you can copy
+or move files into it, or make a new file in it using what you have
+already learned. Make sure you are in your own directory and then make a
+new directory using the command directly below and then see it exists
+using the next command.<p>
+<a href="index.html#pwd">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="rmdir1"></a>
+A directory can be removed, but only when it is empty. So rather than
+using your new directory, it can be removed since it's still empty.
+Remove the new directory using the command directly below and then see
+it is no longer there using the next command.<p>
+<a href="index.html#pwd">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="ex1"></a>
+It is good practice to logout or exit when you are done. At least one of
+those two commands will work - often either will work. After you've
+logged out, the connection will be terminated, you can close the window
+in which you've been working and the (virtual) computer you've been
+using will be made ready for another user.<p>
+<a href="index.html#exiting">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="next1"></a>
+If you're able to work all the exercises above, then you are ready to
+work with a Linux computer. While there are many more commands, with
+many of them very useful, you can wait until you need them. However what
+you probably will need soon is the ability to transfer files back and
+forth between your local computer and the remote Linux computer. That
+allows you to put data into the remote computer, and then to retrieve
+the result files to use them for presentations and publications. These
+commands may require additional software, and you can reach a
+description by clicking below.<p>
+
+A tutorial on a few more useful commands and Linux functionality which
+might be of interest can also be reached by clicking below.<p>
+<a href="index.html#next">Return to tutorial.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="transfer1"></a>
+As mentioned before it is often necessary to transfer files in either
+direction between your local computer and a remote Linux computer. There
+are many ways to do this, and different ways have different advantages.
+But we'll just look at one method which works very well for transferring
+one or a few small files - by small I mean not too many megabytes.
+There's one additional step for Windows users. It's not necessary for
+Mac users if they are using OS X which you almost certainly are. Windows
+users will need to make sure that the necessary file transfer software
+is installed on the local computer.<p>
+<a href="file-transfer.html">Return to File Transfer.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="perm1"></a>
+Linux was designed as a multi-user operating system, and so has a more
+elaborate way of granting and restricting permissions than is typically
+found or needed in an operating system designed for single-user
+computers. Also Linux has some built-in protections, such as requiring
+files to be given permission to be executable programs before they can
+run as programs. We are just going to cover the most common uses which
+you'll encounter when working in a Linux multi-user system in your own
+account. We'll point out the permissions applicable for when you have a
+group of collaborators.<p>
+
+Every file and directory has a set of permissions specifying who can do
+what with it. You've already seen the permissions listed in a hard to
+understand way when using the  ls -l  command, and now we'll dig into
+understanding them.<p>
+
+We'll start with the viewing the permissions in your home directory in
+your Glide reservation which is done with the ls -l command, so enter
+that command from your home directory:<p>
+<a href="perm.html">Return to Permissions</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="perm2"></a>
+You see the contents of your home directory and at the left are a series
+of characters starting with a dash or the letter d. A dash indicates
+it's a file, a d indicates it's a directory - and then 3 sets of
+permissions, with 3 characters each, are shown after that. We'll deal
+only with file permissions, and we'll deal only with the file
+permissions in your directory. They are what you need to execute
+programs in your directory, and dealing with groups and more gets more
+complicated and you can learn that fairly easily once you're comfortable
+with permissions in your own directory.<p>
+
+Look at the parts of the lines you've displayed. If you have any
+problems seeing them go back to the main Glide page and review the
+section on Listing Directory Contents.<p>
+<a href="perm.html">Return to Permissions.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="perm3"></a>
+We want to make a file executable. To do this we first need to type in a
+file which could be executed if it had the proper file permission. So
+type the following two lines into a file named test.pl, make sure you
+get every character correct as shown, and save the file. You can use the
+nano editor which is shown on the main Glide page, or any other editor.<p>
+<a href="perm.html">Return to Permissions.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="perm4"></a>
+You have changed the permissions to allow the test.pl in your directory
+to be executed, you have seen the changed permissions and then seen that
+test.pl could executed after changing its permission. That's the point
+of this exercise.<p>
+
+What about the other permissions - Group and World? We don't go into
+them here because we've accomplished the aim of this section. We won't
+go into group permissions because that involves setting up a group in a
+shared computer. This is where 2 or more users are collaborating on a
+project, and want to have shared access to one or more directories.
+Setting up a group involves more Linux commands. However group and also
+world permissions are similar to what you have seen, and you can learn
+more about these topics in other tutorials, such as the recommended
+ones.<p>
+<a href="perm.html">Return to Permissions.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="add1"></a>
+Here are a few more ways to get more done in Linux faster at the cost of
+a bit more learning. Experienced users pick up many more methods,
+commands and command options. You don't need the ones on this page to do
+the Glide exercises, but they will be worth adding to your vocabulary as
+you continue to use Linux. We'll start with the use of wildcards in file
+names. Read the material below, and try out each command.<p>
+<a href="add.html">Return to Additional.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="add2"></a>
+The grep command searches inside files for a specified pattern. It can
+be extremely useful even in simple ways, but to realize its full power
+requires learning how to specify patterns via a notation called a
+regular expression, or for short, a regex. Because of the complexity of
+this area, we will only do some of the simpler examples. So execute the
+command examples below.<p>
+<a href="add.html">Return to Additional.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="add3"></a>
+This next item deals with the pipe command which sends the output of one
+command directly to the input of another command. So it's another
+example of redirection of output. It can be extremely useful in
+eliminating handling or storing of intermediate results. Below is an
+example of a very simple task - run the exercise first without the pipe
+and then the one with it. It's a very simple example and the benefit of
+using the pipe can be much greater in more complicated tasks, but this
+is a start.<p>
+<a href="add.html">Return to Additional.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="set-up-welcome"></a>
+In order to take advantage of the benefits offered by the Easy Glide
+into Linux, you'll need to have on your screen a window showing the
+connection to the remote Linux computer which you'll be using. This web
+page shows how to get this set up, and then, at the bottom of the page
+there's a link to the learning material.<p>
+<a href="get-set-up.html">Return to Getting Set Up.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="dir-tree1"></a>
+It can help to actually see the arrangement of the sub-directories and
+the files in them. The tree command shows these arranged in a tree-like
+format starting with your directory which is shown as a dot. Now execute
+the command immediately below which will show you all  your
+subdirectories and files in them arranged in a tree diagram.<p>
+<a href="directories-illus.html">Return to Viewing directories.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+<a name="dir-tree2"></a>
+The tree command can be told to start with another directory, such as
+the /home directory in which your directory is located. Now execute the
+command immediately below which will show you all the subdirectories and
+files in /home <p>
+<a href="directories-illus.html">Return to Viewing directories.</a>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+
+Copyright 2019, 2021 by Henry E. Schaffer.
+Comments and suggestions are welcome, and should go to
+hes&#64;ncsu.edu<br>
+Licensed under the Creative Commons Attribution-NonCommercial 4.0
+International Public License
+https://creativecommons.org/licenses/by-nc/4.0/legalcode<br>
+Last updated 11/23/2021
+</body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+<head><title>Getting Set Up for the Easy Glide into Linux</title></head>
+<body>
+<center><h3><font color=red>Getting Set Up for the Easy Glide into Linux
+</font></h3></center>
+
+<audio controls> <source src="set-up-welcome.mp3" type="audio/mpeg"> </audio>
+<a href="transcript.html#set-up-welcome">Transcript</a><p>
+
+A Linux image named <b>Glide</b> has been set up in the VCL (which is
+the same thing as the VCE) which already has a number of directories and
+files set up which make for an easy start. (If you don't have access to
+the VCL, or the VCL image, <a href="glide-image.html"> here's how to set
+up the equivalent environment.</a>)<p>
+
+You will need to have or make a "Reservation" and then to login to that 
+remote Linux computer through the VCL
+<a href="https://vcl.ncsu.edu/get-help/documentation/how-do-i-get-started/"
+target="_blank">Click here for a full description.</a> 
+Remember that if you mess up something,
+for a fresh start you can just delete your VCL Reservation and make a 
+new one.
+
+<center><b><font color=green> A Glimpse at the path to your reservation.
+</font></b></center>
+
+<table><tr><td><img src="Login-page.png" alt="pic of login page" height="250"
+width="350"><br>Choose your campus.</td>
+<td><img src="NCState-login.png" alt="pic of auth page" height="300"
+width="250"><br>Enter your campus ID/Password.</td>
+<td><img src="go-to-reservations.png" alt="pic of go to reservations
+page" height="125" width="250"><br>Click on Reservations.</td>
+<td><img src="select-reservation.png" alt="select your reservation page"
+height="125" width="175"><br>Choose Glide if it's showing, or use the
+drop-down menu to select it.</td></tr></table><p>
+
+You've made a Reservation for Glide, and when the "Connect" button
+shows up, click on it and a pop-up window such as:
+<pre>
+Connect to reservation using SSH (Secure Shell) 
+
+If you did not click on the Connect! button from the computer you will be 
+using to access the VCL system, you will need to return to the Current 
+Reservations page and click the Connect! button from a web browser 
+running on the same computer from which you will be connecting to the 
+VCL system. Otherwise, you may be denied access to the remote computer.
+
+Use the following information when you are ready to connect:
+
+    Remote Computer: 152.46.18.165 <font color=red> <b>Note: use your reservation's IP address, not this one</b></font>
+    User ID: (your-user-id)
+    Password: (use your campus password)
+</pre>
+
+will give the IP address of the Remote Computer - think of it as the
+name of the remote computer. Of course you use the IP address in your
+pop-up window, not the one in this example.<p>
+
+Next we need to have a terminal/command window from the remote computer
+show up on your screen. How this is done depends on the operating system
+of your local computer and the software installed on your local
+computer.
+
+<table><tr><td>
+<center><b><font color=red>Mac</font></b></center>
+The needed software is already installed. Use Finder -> Applications ->
+Utilities and double click on Terminal. Or just type terminal in the
+Finder. In that window you type &nbsp; &nbsp; ssh id@IP-address &nbsp;
+&nbsp; where "id" is your ID, and then enter your password when requested.
+
+</td>
+<td>
+<center><b><font color=green>Windows</font></b></center>
+Perhaps the easiest way is to 
+<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">
+download and install the PuTTY software.</a>
+Start PuTTY, enter the IP address in the box for that, and that will
+bring up a window where you enter your ID and then enter your password
+when requested.<p>
+(Another Windows method is to use Remote Desktop
+Connection app. But this requires the remote Linux computer to have
+some special software installed and so won't work in many (most?) cases.
+That's why it's not used here.)
+</td></tr></table><p>
+
+<table><tr><td>
+At this point you're logged into the remote Linux computer in the VCL.
+(The top line in the window shows your ssh login command, using your ID
+and the IP address from the pop-up window.)<p>
+
+The terminal/command window should be placed to the side of this browser
+window so you can see both and easily go back and forth. You may have to
+make the browser window somewhat narrower than usual.  Don't be
+concerned about the X11 or other stuff showing after your login line and
+above the command line where you will work.
+(For those people who intend to use the HPC: The VCL image for this
+tutorial is very similar to a login node in the HPC but you don't need
+an HPC account. Also you don't interfere with HPC research usage while
+you are experimenting and learning.) 
+
+</td><td>
+<img src="log-in.png" alt="showing logged in to remote window">
+</td></tr></table>
+
+Remember that when you log out and delete an image reservation it it
+totally gone. So if you mess up something and want to start with a fresh
+image, just logout, delete the reservation and make a new one. That's a
+nice feature of the VCE/VCL!<p>
+
+Now <a href="index.html">go to the Easy Glide into Linux!</a>
+<hr>
+Copyright 2019, 2020, 2021 by Henry E. Schaffer.
+Comments and suggestions are welcome, and should go to
+hes&#64;ncsu.edu<br>
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 
+International Public License  
+https://creativecommons.org/licenses/by-nc/4.0/legalcode<br>
+Last updated 11/22/2021
+</body><html>
